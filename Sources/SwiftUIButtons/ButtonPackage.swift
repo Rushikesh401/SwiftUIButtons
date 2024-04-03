@@ -21,4 +21,8 @@ public struct ButtonPackage {
     public static func outlineButton(text: String, action: @escaping () -> Void) -> some View {
         OutlineButton(text: text, action: action)
     }
+    
+    public static func iconButton(icon: Image,  action: @escaping () -> Void) -> some View {
+        IconButton(icon: icon, action: action)
+    }
 }
