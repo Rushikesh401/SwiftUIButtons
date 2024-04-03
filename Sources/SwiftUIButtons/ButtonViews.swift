@@ -77,3 +77,28 @@ public struct OutlineButton: View {
         }
     }
 }
+
+@available(iOS 13.0.0, *)
+public struct IconButton: View {
+    var icon: Image
+    var action: () -> Void
+    
+    public init(icon: Image, action: @escaping () -> Void) {
+        self.icon = icon
+        self.action = action
+    }
+
+    public var body: some View {
+        Button(action: action) {
+            icon
+                .foregroundColor(.blue)
+                .padding()
+                .background(Color.white)
+                .cornerRadius(8)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.blue, lineWidth: 1)
+                )
+        }
+    }
+}
