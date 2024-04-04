@@ -16,7 +16,7 @@ git clone https://github.com/Rushikesh401/SwiftUIButtons.git
 ```
 URL : https://github.com/Rushikesh401/SwiftUIButtons.git
 ```
-Set Dependency Rule to Exact version and version to 2.0.2 while adding top your project
+Set Dependency Rule to Exact version and version to 2.0.2 while adding to your project
     
 
 
