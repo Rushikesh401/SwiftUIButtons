@@ -1,7 +1,5 @@
 //
-//  File.swift
-//  
-//
+//  ButtonViews.swift
 //  Created by Rushikesh Suradkar on 03/04/24.
 //
 
@@ -23,7 +21,7 @@ public struct PrimaryButton: View {
                 .foregroundColor(.white)
                 .padding()
                 .background(Color.blue)
-                .cornerRadius(8)
+                .cornerRadius(10)
         }
     }
 }
@@ -44,7 +42,7 @@ public struct SecondaryButton: View {
                 .foregroundColor(.blue)
                 .padding()
                 .background(Color.white)
-                .cornerRadius(8)
+                .cornerRadius(20)
                 .overlay(
                     RoundedRectangle(cornerRadius: 8)
                         .stroke(Color.blue, lineWidth: 2)
@@ -66,10 +64,10 @@ public struct OutlineButton: View {
     public var body: some View {
         Button(action: action) {
             Text(text)
-                .foregroundColor(.blue)
+                .foregroundColor(.red)
                 .padding()
                 .background(Color.white)
-                .cornerRadius(8)
+                .cornerRadius(10)
                 .overlay(
                     RoundedRectangle(cornerRadius: 8)
                         .stroke(Color.blue, lineWidth: 1)
@@ -91,7 +89,7 @@ public struct IconButton: View {
     public var body: some View {
         Button(action: action) {
             icon
-                .foregroundColor(.blue)
+                .foregroundColor(.yellow)
                 .padding()
                 .background(Color.white)
                 .cornerRadius(8)
