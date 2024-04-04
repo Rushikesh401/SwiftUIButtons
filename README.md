@@ -1,4 +1,4 @@
-# Creating custom Middleware in ASP.NET Core Web API
+# Custom Swift package
 This is a small proof of concept project to demonstrate how to build your own Swift package. 
 This package includes various types of buttons that can be easily integrated into a SwiftUI iOS app by adding dependencies through the Swift package manager.
 
